@@ -1,0 +1,36 @@
+<p>example works!</p>
+<h1>Interpolation</h1>
+<!-- -> String interpolation to display the title -->
+<h1>{{title}}</h1>
+<button (click)="changed()">Title Changed</button>
+<!--event binding-->
+<h1>Event Binding</h1>
+<p>count: {{count}}</p>
+<button (click)="increment()">Increment</button>
+<button (click)="decrement()">Decrement</button>
+<br><br>
+<!-- Property binding for image source -->
+<h1>Property Binding</h1>
+<img [src]="imageUrl" alt="Angular Logo" ><!-- -> Bind image source to imageUrl -->
+
+ 
+<button [disabled]="isdisabled">Property binding</button><!-- -> Button to toggle disabled state -->
+<!-- Class binding for paragraph -->
+ <h1>Class Binding</h1>
+<button [class.special]="isspecial">Class Binding</button><!-- -> Apply special class based on isSpecial -->
+<!-- Style binding for paragraph -->
+ <h1>Style Binding</h1>
+<p [style.fontSize.px]="fontSize" [style.color]="color">This Is Dynamic Style Property</p> <!-- -> Bind font size and color -->
+<!-- Buttons to change styles -->
+<button (click)="Decreasefont()">Decreasefont</button><!-- -> Button to toggle text size -->
+<button (click)="Increasefont()">Increasefont</button><!-- -> Button to toggle text size -->
+<button (click)="Fontcolor()">Fontcolor</button><!-- -> Button to toggle text color -->
+<!-- Anchor tag with attribute binding for href -->
+ <br>
+ <h1>Attribute Binding</h1>
+<a [attr.href]="linkUrl" target="_blank">Visit Angular</a> <!-- Bind href attribute -->
+<!-- Two-way binding for input field -->
+ <br>
+ <h1>Two-way Binding</h1>
+<input [(ngModel)]="name" placeholder="Enter Your Name"/><!-- Two-way binding for input field -->
+<p>Hello {{name}}</p><!-- -> Display the bound name -->
