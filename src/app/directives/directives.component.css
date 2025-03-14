@@ -1,0 +1,142 @@
+.greeting {
+    background-color: #f0f8ff; /* Light blue background */
+    border: 1px solid #007bff; /* Blue border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding around the content */
+    margin-top: 20px; /* Margin above the greeting */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+  }
+  .greeting{
+    color: #333; /* Dark gray text color */
+  }
+  .container {
+    max-width: 800px; /* Maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding around the container */
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  }
+  
+  h1 {
+    text-align: center; /* Center the heading */
+    color: #333; /* Dark gray text color */
+  }
+  
+  
+  .phone-table {
+    width: 100%; /* Full width for the table */
+    border-collapse: collapse; /* Collapse borders */
+    margin-top: 20px; /* Margin above the table */
+  }
+  
+  .phone-table th, .phone-table td {
+    border: 1px solid #ddd; /* Light gray border */
+    padding: 12px; /* Padding inside cells */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .phone-table th {
+    background-color: #007bff; /* Blue background for header */
+    color: white; /* White text for header */
+  }
+  
+  .phone-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray background for even rows */
+  }
+  
+  .phone-table tr:hover {
+    background-color: #e0e0e0; /* Darker gray on hover */
+  }
+  .ngswitch {
+    max-width: 400px; /* Maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding around the container */
+    background-color: #f3d2d2; /* Light gray background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  }
+ 
+  .inbuilt {
+    max-width: 600px; /* Maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding around the container */
+    background-color: #c2b7b7; /* Light gray background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  }
+  
+  
+  .info {
+    margin-top: 20px; /* Margin above the info section */
+  }
+  
+  .info p {
+    padding: 10px; /* Padding around each paragraph */
+    border-bottom: 1px solid #ddd; /* Light gray border below each paragraph */
+  }
+  
+  .info p:last-child {
+    border-bottom: none; /* Remove border from the last paragraph */
+  }
+  
+  /* Light Theme Styles */
+.light-theme {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Dark Theme Styles */
+  .dark-theme {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Active State Styles */
+  .active {
+    font-weight: bold;
+    text-decoration: underline;
+    color: blue;
+  }
+  
+  /* General Styles */
+  h1 {
+    margin: 20px 0;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ddd;
+  }
+
+  .box {
+    display: flex; /* Center content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    background-color: lightgray; /* Background color of the box */
+    margin: 20px 0; /* Margin above and below the box */
+  }
+  
+  .controls {
+    margin-top: 20px; /* Margin above the controls */
+  }
+  
+  button {
+    margin: 5px; /* Margin around buttons */
+    padding: 10px 15px; /* Padding for buttons */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  button:hover {
+    background-color: #ddd; /* Light gray background on hover */
+  }
+  

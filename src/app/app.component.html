@@ -3,3 +3,16 @@
 <!-- src/app/app.component.html -->
 <h1>Welcome to My Angular App!</h1>
 <app-example></app-example>
+<app-directives></app-directives>
+<!--what we have write in test what will be shows on wish-->
+<div class="container">
+<h1>Custom Pipes</h1>
+<div class="info">
+    <u><h3>Before Reverse</h3></u>
+<h4>{{originalname}}</h4>
+<u><h3>After Reverse</h3></u>
+<h4>{{originalname | test }}</h4>
+<u><h3>Based on gender mr&miss change</h3></u>
+<h4>{{person |seema:wish}}</h4>
+</div>
+</div>

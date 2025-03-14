@@ -1,0 +1,27 @@
+.container {
+    max-width: 600px; /* Maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding around the container */
+    background-color: #aac8da; /* Light gray background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  }
+  
+  h1 {
+    text-align: center; /* Center the heading */
+    color: #333; /* Dark gray text color */
+  }
+  
+  .info {
+    margin-top: 20px; /* Margin above the info section */
+  }
+  
+  .info p {
+    padding: 10px; /* Padding around each paragraph */
+    border-bottom: 1px solid #ddd; /* Light gray border below each paragraph */
+  }
+  
+  .info p:last-child {
+    border-bottom: none; /* Remove border from the last paragraph */
+  }
+  

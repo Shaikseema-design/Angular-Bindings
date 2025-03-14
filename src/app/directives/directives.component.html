@@ -1,0 +1,78 @@
+<p>directives works!</p>
+<h1>ngIf</h1>
+<button (click)="isvisible">Visibility</button>
+<div *ngIf="isvisible" class="greeting">The text is visible if the condition is true</div>
+<div class="ngFor">
+<h1>ngFor</h1>
+<table border="5px" class="phone-table">
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Price</td>
+        <td>Ram</td>
+    </tr>
+    <tr *ngFor="let m of Mobiles">
+        <td>{{m.id}}</td>
+        <td>{{m.name}}</td>
+        <td>{{m.price}}</td>
+        <td>{{m.ram}}</td>
+    </tr>
+</table>
+</div>
+<h1>ngSwitch</h1>
+<div class="ngswitch">
+<input type="text" [(ngModel)]="op">
+<div [ngSwitch]="op">
+    <div *ngSwitchCase="'+'">{{number1}}+{{number2}}={{number1+number2}}</div>
+    <div *ngSwitchCase="'-'">{{number1}}-{{number2}}={{number1-number2}}</div>
+    <div *ngSwitchCase="'*'">{{number1}}*{{number2}}={{number1*number2}}</div>
+    <div *ngSwitchCase="'/'">{{number1}}/{{number2}}={{number1/number2}}</div>
+    <div *ngSwitchCaseDefault=" "> Invalid Input Symbol</div>
+</div>
+</div>
+<h1>ngClass</h1>
+<div [ngClass]="{'dark-theme': isDarkTheme, 'light-theme': !isDarkTheme}">
+<h2 [ngClass]="{'active': isActive}">Welcome to the Theme Toggle Example!</h2>
+<p>This is a simple demonstration of using ngClass.</p>
+<button (click)="toggleTheme()">Toggle Theme</button>
+<button (click)="toggleActive()">Toggle Active State</button>
+</div>
+<h1>ngStyle</h1>
+<div [ngStyle]="{'font-size.px': fontSize}">
+    This text size can be adjusted!
+</div>
+<button (click)="increaseFontSize()">Increase Font Size</button>
+<button (click)="decreaseFontSize()">Decrease Font Size</button>
+<h1>Attribute Directives Example</h1>
+<!--pipe-->
+<div class="inbuilt">
+<h1>Pipes</h1>
+<div class="info"><h3>uppercase</h3>
+<p>{{name | uppercase}}</p>
+<h3>titlecase</h3>
+<p>{{name | titlecase}}</p>
+<h3>lowercase</h3>
+<p>{{name | lowercase}}</p>
+<h3>currency</h3>
+<p>{{salary | currency}}</p>
+<h3>indian currency</h3>
+<p>{{salary | currency : 'INR'}}</p>
+<h3>Json example</h3>
+<P>{{object}}</P>
+<p>{{object |json}}</p><!--json pipe-->
+<h3>Date</h3>
+<p>{{dob | date}}</p>
+<p>{{dob | date:'dd/MM/yy'}}</p>
+<p>{{dob | date:'dd/MM/yyyy'}}</p><!--date pipe-->
+<!--percent pipe-->
+<h3>percent ex</h3>
+<input type="text"[(ngModel)]="percentage">
+<p>{{percentage | percent}}</p>
+<!--slice pipe-->
+<h3>Slice ex</h3>
+<p>{{company}}</p>
+<p>{{company |slice:0:5}}</p>
+</div>
+</div>
+<h1>Creating CustomPipes</h1>
+
